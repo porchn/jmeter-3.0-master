@@ -1,4 +1,4 @@
-# Use vinsdocker/jmbase
+# Use porchn/jmeter-3.0-base
 
 FROM porchn/jmeter-3.0-base
 MAINTAINER Porchn
