@@ -11,6 +11,8 @@ sudo docker run -dit --name master porchn/jmeter-3.0-master /bin/bash
 ```
 sudo docker exec -it master /bin/bash
 
+cd /jmeter/apache-jmeter-3.0/bin
+
 sh jmeter.sh -n -t /jmeter/jmxfile/mytest.jmx
 ```
 
