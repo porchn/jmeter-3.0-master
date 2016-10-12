@@ -3,6 +3,9 @@
 FROM porchn/jmeter-3.0-base
 MAINTAINER Porchn
 
+# copy test file
+COPY *.jmx /jmeter/jmxfile
+
 # create volume
 VOLUME /jmeter/jmxfile
 
