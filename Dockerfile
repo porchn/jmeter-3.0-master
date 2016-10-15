@@ -4,7 +4,7 @@ FROM porchn/jmeter-3.0-base
 MAINTAINER Porchn
 
 # mkdir userconfig
-RUN mkdir -p /jmeter/{userconfig,test}
+RUN mkdir -p /jmeter/userconfig
 RUN mv -R /jmeter/apache-jmeter-${JMETER_VERSION}/bin/user.properties /jmeter/userconfig
 
 # renew user.properties path
