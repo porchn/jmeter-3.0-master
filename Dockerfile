@@ -3,6 +3,9 @@
 FROM porchn/jmeter-3.0-base
 MAINTAINER Porchn
 
+# install vim
+RUN apt-get -y install vim
+
 # copy test file
 COPY *.jmx /jmeter/jmxfile
 
