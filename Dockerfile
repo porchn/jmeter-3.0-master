@@ -2,6 +2,8 @@
 
 FROM porchn/jmeter-3.0-base
 MAINTAINER Porchn
+ENV JMETER_VERSION 3.0
+
 
 # mkdir userconfig
 #RUN mkdir -p /jmeter/userconfig
