@@ -13,9 +13,9 @@ RUN mv /jmeter/apache-jmeter-${JMETER_VERSION}/bin/user.properties /jmeter/userc
 RUN perl -pi -e 's/user.properties=user.properties/user.properties=\/jmeter\/userconfig\/user.properties/g' /jmeter/apache-jmeter-${JMETER_VERSION}/bin/jmeter.properties
 
 
-# copy test file
-#COPY *.jmx /jmeter/jmxfile
-#COPY *.json /jmeter/mapping
+# Copy default config
+COPY *.jmx /jmeter/jmxfile
+COPY *.json /jmeter/mapping
 
 
 # create volume
