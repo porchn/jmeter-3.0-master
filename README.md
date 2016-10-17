@@ -7,7 +7,7 @@ jmetet master
 sudo docker run -dit --name master porchn/jmeter-3.0-master /bin/bash
 
 ```
-#Volume for containner
+#Volume for container
 
 * `/jmeter/jmxfile` # for test file *.jmx 
 * `/jmeter/mapping`  # for mapping elasticsearch index
