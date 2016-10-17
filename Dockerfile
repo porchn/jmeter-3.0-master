@@ -14,11 +14,10 @@ RUN perl -pi -e 's/user.properties=user.properties/user.properties=\/jmeter\/use
 
 
 # copy test file
-# COPY *.jmx /jmeter/jmxfile
+COPY *.jmx /jmeter/jmxfile
 
 # create volume
-VOLUME /jmeter/jmxfile
-VOLUME /jmeter/userconfig
+VOLUME ["/jmeter/jmxfile", "/jmeter/userconfig"]
 
 # Ports to be exposed from the container for JMeter Master
 EXPOSE 60000
