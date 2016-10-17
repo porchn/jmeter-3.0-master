@@ -14,7 +14,7 @@ RUN perl -pi -e 's/user.properties=user.properties/user.properties=\/jmeter\/use
 
 
 # copy test file
-COPY *.jmx /jmeter/jmxfile
+# COPY *.jmx /jmeter/jmxfile
 
 # create volume
 VOLUME /jmeter/jmxfile
