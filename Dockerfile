@@ -16,8 +16,6 @@ RUN perl -pi -e 's/user.properties=user.properties/user.properties=\/jmeter\/use
 # Copy default config
 COPY *.jmx /jmeter/jmxfile
 COPY *.json /jmeter/mapping
-COPY runtest.sh /jmeter
-
 
 # create volume
 VOLUME ["/jmeter/jmxfile", "/jmeter/userconfig", "/jmeter/mapping"]
